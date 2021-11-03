@@ -1,3 +1,9 @@
+/* HIGHLIGHT1 = #de6000 */
+/* HIGHLIGHT2 = #273570 */
+/* FOREGROUND = white */
+/* BACKGROUND = black, but can be slightly transparent for less harshness against white */
+/* Some transparency on beginning of gradients. See header and footer */
+
 /* @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
@@ -9,6 +15,9 @@ body {
 p {
   font-size: calc(10px + 2vmin);
   line-height: calc(20px + 2vmin);
+  font-weight: 100;
+  -webkit-text-stroke: 0.25px #273570;
+
 }
 
 span {
@@ -21,37 +30,31 @@ a {
 
 a:hover {
   background: #de6000cd;
+  box-shadow: 2px 2px #555555;
 }
-
-/* HIGHLIGHT1 = #de6000 */
-/* HIGHLIGHT2 = #273570 */
-/* black and white */
 
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  display: block;
+  width: calc(75vmin);
   pointer-events: none;
   border-radius: 100%;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-main {
-  min-height: 100vh;
-  background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true");
+  min-height: 90vh;
+  /* background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true"); */
   background-color: black;
 }
 
 .App-header {
   /* background-color: #de6000; */
-  background: linear-gradient(45deg, #273570, #FF8700);
+  background: linear-gradient(45deg, #273670eb, #FF8700);
   /* background: linear-gradient(45deg, #e66465, #9198e5); */
   max-height: 10vh;
   display: flex;
@@ -60,11 +63,14 @@ a:hover {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* border-bottom: 1px solid white; */
 }
 
 .App-footer {
-  background-color: #273570;
-  max-height: 5vh;
+  background: linear-gradient(45deg, #de6000cd, #273570);
+  /* background-color: #273570; */
+  min-height: 5vh;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,10 +84,9 @@ a:hover {
   border-radius: 10px;
   color: white;
   background: #de6000;
-  
   padding: 15px;
   margin: 10px;
-  box-shadow: 2px 3px #888888;
+  box-shadow: 1px 1px #555555;
   text-decoration: none;
 }
 
@@ -108,6 +113,13 @@ a:hover {
   margin: 50px;
 }
 
+/* Spinning animation
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -115,4 +127,5 @@ a:hover {
   to {
     transform: rotate(360deg);
   }
-}
+} 
+*/
