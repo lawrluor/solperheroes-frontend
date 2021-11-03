@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
+import { Fragment } from 'react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Solperheroes</p> 
+        <h4 className="titleText">SOLPERHEROES</h4> 
       </header>
 
+              {/* <img src={logo} className="App-logo" alt="logo" /> */}
+
       <main className="App-main">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Solperheroes.
-        </p>
+        <div className="mainTextContainer">
+          <span className="bodyText blurbText">
+          </span>
+
+          <p className="bodyText">
+            SOLPERHEROES is the NFT that is reinventing charity. Exisitng on the Solana blockchain, there are thousands of unique, one-of-a-kind collectibles. Choose your Solperhero and make a difference today!
+          </p>
+        </div>
+
         <a
           className="App-button"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Join Twitter
+          TWITTER
         </a>
 
         <a
@@ -28,7 +36,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Join Discord
+          DISCORD
         </a>
         
       </main>

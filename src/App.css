@@ -1,3 +1,32 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-size: calc(10px + 2vmin);
+  line-height: calc(20px + 2vmin);
+}
+
+span {
+  font-size: calc(10px + 2vmin);
+}
+
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  background: #de6000cd;
+}
+
+/* HIGHLIGHT1 = #de6000 */
+/* HIGHLIGHT2 = #273570 */
+/* black and white */
+
 .App {
   text-align: center;
 }
@@ -5,6 +34,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +44,15 @@
 }
 
 .App-main {
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true");
-  background-color: #cccccc;
-
+  background-color: black;
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #de6000; */
+  background: linear-gradient(45deg, #273570, #FF8700);
+  /* background: linear-gradient(45deg, #e66465, #9198e5); */
   max-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +63,7 @@
 }
 
 .App-footer {
-  background-color: #282c34;
+  background-color: #273570;
   max-height: 5vh;
   display: flex;
   flex-direction: column;
@@ -43,13 +74,38 @@
 }
 
 .App-button {
-  border: 3px solid black;
+  /* border: 3px solid white; */
   border-radius: 10px;
-  color: #61dafb;
+  color: white;
+  background: #de6000;
+  
   padding: 15px;
-  margin: 5px;
+  margin: 10px;
   box-shadow: 2px 3px #888888;
   text-decoration: none;
+}
+
+.titleText {
+  color: white;
+}
+
+.bodyText {
+  color: white;
+}
+
+.mainTextContainer { 
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+
+.infoText {
+  color: white;
+}
+
+.blurbText {
+  margin: 50px;
 }
 
 @keyframes App-logo-spin {
