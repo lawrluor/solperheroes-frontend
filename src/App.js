@@ -58,7 +58,7 @@ function App() {
         <section className="block1">
           <div className="block1content">
             <div className="logoContainer">
-              <img src={""} className="App-logo" alt="logo" />
+              <img src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solperheros_banner.png?raw=true"} className="App-logo" alt="logo" />
             </div> 
 
             <p>
