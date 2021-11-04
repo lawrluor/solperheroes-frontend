@@ -1,18 +1,76 @@
-/* HIGHLIGHT1 = #de6000 */
-/* HIGHLIGHT2 = #273570 */
-/* FOREGROUND = white */
-/* BACKGROUND = black, but can be slightly transparent for less harshness against white */
+@import-normalize;
+
+/* DEBUG */
+* {
+  border: green 1px solid
+}
+
+/* BEGIN RESET CSS */
+/* NOTE: Importing separately doesn't seem to work. */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font: inherit;
+	vertical-align: baseline;
+  color: white;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET CSS */
+
 /* Some transparency on beginning of gradients. See header and footer */
 /* border-radius: 10px */
+
+:root {
+  --ACCENT: #de6000;
+  --HIGHLIGHT: #273570;
+  --FOREGROUND: white;
+  --BACKGROUND: black; /* BACKGROUND = black, but can be slightly transparent for less harshness against white */
+  --GREY: #555555;
+}
 
 /* @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-/* DEBUG */
-* {
-  /* border: green solid 2px; */
-}
+
 
 body {
   font-family: 'Righteous', cursive;
@@ -27,26 +85,55 @@ h2 {
   font-size: calc(1.25rem + 2vmin);
 }
 
+h3 {
+  font-size: calc(1rem + 2vmin);
+}
+
+h4 {
+  font-size: calc(0.75rem + 2vmin);
+}
+
+h5 {
+  font-size: calc(0.5rem + 2vmin);
+}
+
+h6 {
+  font-size: calc(0.33rem + 2vmin);
+}
+
 p {
   font-size: calc(10px + 2vmin);
   line-height: calc(20px + 2vmin);
-  font-weight: 100;
-  -webkit-text-stroke: 0.25px #273570;
-  margin: 0px;
-  padding: 0px;
+  font-weight: 600;
+  -webkit-text-stroke: 0.1px #273570;
 }
 
 span {
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+	padding: 0;
+}
+
+strong {
+  font-weight:900;
 }
 
 a {
   font-weight: bold;
+  margin: 0;
+	padding: 0;
 }
 
 a:hover {
   background: #de6000cd;
   box-shadow: 2px 2px #555555;
+}
+
+.comingSoon {
+  position: absolute;
+  font-size: calc(0.1rem + 2vmin);
+  transform: rotate(-45deg);
+  left: 1rem;
+  overflow-wrap: break-word;
 }
 
 .downArrow {
@@ -62,6 +149,7 @@ a:hover {
 
 .subTitle {
   font-family: 'Poiret One', cursive;
+  line-height: 2rem;
 }
 
 .App {
@@ -69,7 +157,7 @@ a:hover {
 }
 
 .logoContainer {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .App-logo {
@@ -94,12 +182,13 @@ a:hover {
   align-items: center;
   justify-content: center;
   color: white;
+  padding: 15px;
   /* border-bottom: 1px solid white; */
 }
 
 .App-footer {
-  background: linear-gradient(45deg, #de6000cd, #273570);
-  /* background-color: #273570; */
+  background: linear-gradient(45deg, #de6000cd, var(--HIGHLIGHT));
+  /* background-color: var(--HIGHLIGHT); */
   min-height: 5vh;
   padding: 5px;
   display: flex;
@@ -123,33 +212,21 @@ a:hover {
   background: #de6000;
   padding: 15px;
   margin: 10px;
-  box-shadow: 1px 1px #555555;
+  box-shadow: 1.5px 1.5px 5px #555555;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-.titleText {
-  color: white;
-}
-
-.bodyText {
-  color: white;
-}
-
-.infoText {
-  color: white;
-}
-
 .teamMember {
   width: 20rem;
-  height: 20rem;
-  background: #273570;
+  background: var(--HIGHLIGHT); /* var(--HIGHLIGHT); */
   margin-left: auto;
   margin-right: auto;
   margin-top: 3vh;
   border-radius: 10px;
-  padding-bottom: 15px;
+  padding: 15px 0px;
+  box-shadow: 1.5px 1.5px 5px #555555;
 }
 
 .teamMember h3 {
@@ -168,7 +245,10 @@ a:hover {
   background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true");
   background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true"), linear-gradient(black, black); /* W3C */
   /* background-color: black; */
-  min-height: 90vh; /* with top as 10vh, and first block as 87vh, allows second block to show through with 2vh */
+  min-height: 87vh; /* with top as 10vh, and first block as 87vh, allows second block to show through with 2vh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .block1content {
@@ -182,9 +262,10 @@ a:hover {
 }
 
 .block2 {
-  background: linear-gradient(180deg, #273570, black);
+  background: linear-gradient(180deg, var(--HIGHLIGHT), black);
   padding: 1vw;
-  min-height: 90vh;
+  min-height: 50vh; /* Will be fullsize 100vh when more content is on page */
+  padding: 2rem;
 }
 
 .block2content {
@@ -196,14 +277,24 @@ a:hover {
 .block3 {
   background: black;
   padding: 1vw;
-  min-height: 90vh;
+  min-height: 50vh; /* Will be fullsize 100vh when more content is on page */
 
 }
 
 .teamList {
   display: flex;
-  min-height: 100vh;
   flex: 10;
+}
+
+.teamMember .imgContainer {
+  margin: 10px;
+}
+
+.teamMember img {
+  border: #555555 solid 1px;
+  border-radius: 100%;
+  height: 6rem;
+  width: 6rem;
 }
 
 @media all and (max-width: 50rem) {
@@ -226,8 +317,8 @@ a:hover {
   }
 }
 
-.blurbText {
-  margin: 50px;
+.titleContainer {
+  padding: 1rem;
 }
 
 /* Spinning animation
