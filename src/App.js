@@ -1,6 +1,6 @@
 import './App.css';
 
-import { BsDiscord, BsTwitter, BsChevronDown } from 'react-icons/bs';
+import { BsDiscord, BsTwitter } from 'react-icons/bs';
 
 const TEAM_IMG_DEFAULT = "https://simply-branded.com/wp-content/uploads/2019/11/service1_navy_circle.png"
 const TEAM_DATA = [
