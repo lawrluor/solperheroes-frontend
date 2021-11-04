@@ -1,9 +1,16 @@
 import './App.css';
 
 import { BsDiscord, BsTwitter } from 'react-icons/bs';
+import { IoRocketSharp } from 'react-icons/io5';
 
 const TEAM_IMG_DEFAULT = "https://simply-branded.com/wp-content/uploads/2019/11/service1_navy_circle.png"
 const TEAM_DATA = [
+  {
+    "name": "BKDIP2311",
+    "image": TEAM_IMG_DEFAULT,
+    "role": "Role",
+    "blurb": "Hello"
+  },
   {
     "name": "THE LAW",
     "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/the_law.png?raw=true",
@@ -12,12 +19,6 @@ const TEAM_DATA = [
   },
   {
     "name": "Tooth",
-    "image": TEAM_IMG_DEFAULT,
-    "role": "Role",
-    "blurb": "Hello"
-  },
-  {
-    "name": "BKDIP2311",
     "image": TEAM_IMG_DEFAULT,
     "role": "Role",
     "blurb": "Hello"
@@ -57,11 +58,11 @@ function App() {
         <section className="block1">
           <div className="block1content">
             <div className="logoContainer">
-              <img src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solperheroes_banner.jpg?raw=true"} className="App-logo" alt="logo" />
+              <img src={""} className="App-logo" alt="logo" />
             </div> 
 
             <p>
-              Introducing <strong>SOLPERHEROS</strong>, the NFT that will reinvent charity online. Created on the <strong>Solana</strong> blockchain, there are thousands of unique, one-of-a-kind collectibles. Choose your Solperhero and make a difference!
+              Introducing <strong>SOLPERHEROS</strong>, the NFT that gives back to humanity. Created on the Solana blockchain with a focus on raising money for charity, there are thousands of unique, one-of-a-kind collectibles. Choose your <strong>SOLPERHERO</strong> and make a difference!
             </p>
 
             <div className="buttonContainer">
@@ -93,7 +94,16 @@ function App() {
             <div className="titleContainer">
               <h1>WHO ARE THE SOLPERHEROS?</h1>
             </div>
-            <h5 className="subTitle bodyText">At first the Solperheros are what they are at face value. A cute, clean, superhero machine looking to do good. Along the way we see these heros are not everything they seemed. They fight with each other over meaningless issues. They get bored quite easily. If they are not tasked with being out on the blockchain to raise money for charity, well you know what they say. Idle hands are the Devil’s workshop.</h5>
+          
+            <div>
+              <div className="iconTextContainer">
+                <IoRocketSharp className="icon" /> <h5 className="subTitle">SolPerheros were always traveling the Solana blockchain. But they needed a way out, and they found it. The blockchain is alive and SolPerheros in the form of unique NFTs want to use their unique powers to help in our world. </h5>
+              </div>
+
+              <div className="iconTextContainer">
+                <IoRocketSharp className="icon" /> <h5 className="subTitle">Once the 5000 SolPerheros are minted and accounted for, <strong>a percentage of the overall mint collection will be donated to real charities</strong> that can help solve problems in the real world. But a SolPerhero never stops working. Every time one of the 5000 unique SolPerheros is traded in the secondary market, <strong>a portion of that transaction will also be donated to charities.</strong> SolPerheros never sleep! They travel the blockchain fighting for humanity with every transaction.</h5>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -104,6 +114,13 @@ function App() {
           <section className="teamList">
             {generateTeam()}
           </section>
+        </section>
+
+        <section className="block4">
+          <div className="titleContainer">
+            <h1>ROADMAP</h1>
+            <h5 className="subTitle">...to be announced</h5>
+          </div>
         </section>
       </main>
 

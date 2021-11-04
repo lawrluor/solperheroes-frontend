@@ -115,7 +115,15 @@ span {
 
 strong {
   font-weight:900;
+  -webkit-text-stroke: 0px var(--FOREGROUND);
 }
+
+.block2content strong {
+  font-weight:900;
+  -webkit-text-stroke: 0px var(--FOREGROUND);
+  color: var(--ACCENT);
+}
+
 
 a {
   font-weight: bold;
@@ -149,7 +157,8 @@ a:hover {
 
 .subTitle {
   font-family: 'Poiret One', cursive;
-  line-height: 2rem;
+  font-weight: 900;
+  line-height: 2.2rem;
 }
 
 .App {
@@ -264,7 +273,7 @@ a:hover {
 .block2 {
   background: linear-gradient(180deg, var(--HIGHLIGHT), black);
   padding: 1vw;
-  min-height: 50vh; /* Will be fullsize 100vh when more content is on page */
+  min-height: 60vh; /* Will be fullsize 100vh when more content is on page */
   padding: 2rem;
 }
 
@@ -274,11 +283,33 @@ a:hover {
   margin-right: auto;
 }
 
+.block2content .subTitle {
+  font-weight: 900;
+  display: inline;
+}
+
+.iconTextContainer .icon {
+  margin-right: 2px;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: var(--ACCENT);
+  -webkit-text-stroke: 1px var(--FOREGROUND);
+}
+
+.iconTextContainer {
+  text-align: start;
+}
+
 .block3 {
   background: black;
   padding: 1vw;
   min-height: 50vh; /* Will be fullsize 100vh when more content is on page */
+}
 
+.block4 {
+  background: black;
+  padding: 2vw;
+  min-height: 50vh; /* Will be fullsize 100vh when more content is on page */
 }
 
 .teamList {
