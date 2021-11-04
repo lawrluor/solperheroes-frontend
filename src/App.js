@@ -36,7 +36,7 @@ function App() {
       return (
         <div className="teamMember">
           <div className="imgContainer">
-            <img src={member.image} alt="team member image"/>
+            <img src={member.image} alt="team member"/>
           </div>
           <h2>{member.name}</h2>
           <h6 className="subTitle ">{member.role}</h6>
@@ -67,7 +67,7 @@ function App() {
             <div className="buttonContainer">
               <a
                 className="App-button"
-                href="https://reactjs.org"
+                href="https://twitter.com/home"
                 target="_blank"
                 rel="noopener noreferrer"
               >
