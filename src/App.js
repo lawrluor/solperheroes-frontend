@@ -7,7 +7,7 @@ import { IoRocketSharp } from 'react-icons/io5';
 const TEAM_DATA = [
   {
     "name": "BKDip2311",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/periwinkle_circle.png?raw=true", // "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/bkdip2311_profile.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/maroon_circle.png?raw=true", // "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/bkdip2311_profile.png?raw=true",
     "role": "Founder",
     "blurb": "Hello"
   },
