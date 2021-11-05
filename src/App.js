@@ -13,7 +13,7 @@ const TEAM_DATA = [
   },
   {
     "name": "nicktheengineer",
-    "image": TEAM_IMG_DEFAULT,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQRXzd5G4c69t8K3DWgtfYsh_3oVNVFoa9A&usqp=CAU",
     "role": "Founder",
     "blurb": "Hello"
   },
@@ -25,7 +25,7 @@ const TEAM_DATA = [
   },
   {
     "name": "tooth",
-    "image": TEAM_IMG_DEFAULT,
+    "image": "https://icones.pro/wp-content/uploads/2021/04/icone-cercle-rempli-vert.png",
     "role": "Founder",
     "blurb": "Hello"
   }
