@@ -61,7 +61,7 @@ function App() {
               <img src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solperheros_banner.png?raw=true"} className="App-logo" alt="logo" />
             </div> 
             <p>
-              Introducing <strong>SolPerHeros</strong>, the NFT that gives back to humanity. Created on the Solana blockchain with a focus on raising money for charity, there are thousands of unique, one-of-a-kind collectibles. Choose your <strong>SolPerHero</strong> and make a difference!
+              Introducing <strong>SolPerHeros</strong>, the NFT that gives back. Created on the Solana blockchain with a focus on raising money for charity, there are thousands of unique, one-of-a-kind collectibles. Choose your <strong>SolPerHero</strong> and make a difference!
             </p>
 
             <div className="buttonContainer">
