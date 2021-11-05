@@ -60,19 +60,22 @@ function App() {
             <div className="logoContainer">
               <img src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solperheros_banner.png?raw=true"} className="App-logo" alt="logo" />
             </div> 
-            <p>
-              Introducing <strong>SolPerHeros</strong>, the NFT that gives back. Created on the Solana blockchain with a focus on raising money for charity, there are thousands of unique, one-of-a-kind collectibles. Choose your <strong>SolPerHero</strong> and make a difference!
-            </p>
+
+            <div className="block1description">
+              <p>
+                Introducing <strong>SolPerHeros</strong>, the NFT that gives back. Created on the Solana blockchain with a focus on raising money for charity, there are thousands of unique, one-of-a-kind collectibles. Choose your <strong>SolPerHero</strong> and make a difference!
+              </p>
+            </div>
 
             <div className="buttonContainer">
-              <a
+              {/* <a
                 className="App-button"
                 href="https://twitter.com/home"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 TWITTER <BsTwitter className="iconStyle" />
-              </a>
+              </a> */}
 
               <a
                 className="App-button"
