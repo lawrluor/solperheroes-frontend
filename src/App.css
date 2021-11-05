@@ -172,13 +172,12 @@ a:hover {
 .App-logo {
   display: block;
   width: calc(75vmin);
-  pointer-events: none;
-  border-radius: 100%;
   margin-left: auto;
   margin-right: auto; 
 }
 
 .App-main {
+  background: black; /* fallback background underneath full page while others load */
 }
 
 .App-header {
@@ -326,7 +325,8 @@ a:hover {
   width: 6rem;
 }
 
-@media all and (max-width: 50rem) {
+/* large breakpoint - go to phone mode on tablets early */
+@media all and (max-width: 80rem) {
   .teamList {
     background: black;
     display: flex;

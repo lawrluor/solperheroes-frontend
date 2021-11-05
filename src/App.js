@@ -101,7 +101,7 @@ function App() {
               </div>
 
               <div className="iconTextContainer">
-                <IoRocketSharp className="icon" /> <h5 className="subTitle">Once the 5000 SolPerHeros are minted and accounted for, <strong>a percentage of the overall mint collection will be donated to real charities</strong> that can help solve problems in the real world. But a SolPerhero never stops working. Every time one of the 5000 unique SolPerHeros is traded in the secondary market, <strong>a portion of that transaction will also be donated to charities.</strong> They travel the blockchain fighting for humanity with every transaction.</h5>
+                <IoRocketSharp className="icon" /> <h5 className="subTitle">Once the 5000 SolPerHeros are minted and accounted for, <strong>a percentage of the overall mint collection will be donated to real charities</strong> that can help solve problems in the real world. But a SolPerhero never stops working. Every time one of the 5000 unique SolPerHeros is traded in the secondary market, <strong>a portion of that transaction will also be donated to charities.</strong> They travel the blockchain fighting for humanity with every transaction!</h5>
               </div>
             </div>
           </div>
