@@ -252,8 +252,6 @@ a:hover {
 
 .block1 { 
   background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true");
-  background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true"), linear-gradient(black, black); /* W3C */
-  /* background-color: black; */
   min-height: 87vh; /* with top as 10vh, and first block as 87vh, allows second block to show through with 2vh */
   display: flex;
   flex-direction: column;
