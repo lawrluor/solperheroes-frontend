@@ -3,17 +3,17 @@ import './App.css';
 import { BsDiscord, BsTwitter } from 'react-icons/bs';
 import { IoRocketSharp } from 'react-icons/io5';
 
-const TEAM_IMG_DEFAULT = "https://simply-branded.com/wp-content/uploads/2019/11/service1_navy_circle.png"
+// const TEAM_IMG_DEFAULT = "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/yellow_circle.png?raw=true"
 const TEAM_DATA = [
   {
     "name": "BKDip2311",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/bkdip2311.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/bkdip2311_profile.png?raw=true",
     "role": "Founder",
     "blurb": "Hello"
   },
   {
     "name": "nicktheengineer",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQRXzd5G4c69t8K3DWgtfYsh_3oVNVFoa9A&usqp=CAU",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/yellow_circle.png?raw=true",
     "role": "Founder",
     "blurb": "Hello"
   },
@@ -25,7 +25,7 @@ const TEAM_DATA = [
   },
   {
     "name": "tooth",
-    "image": "https://icones.pro/wp-content/uploads/2021/04/icone-cercle-rempli-vert.png",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/green_circle.png?raw=true",
     "role": "Founder",
     "blurb": "Hello"
   }
@@ -101,7 +101,7 @@ function App() {
               </div>
 
               <div className="iconTextContainer">
-                <IoRocketSharp className="icon" /> <h5 className="subTitle">Once the 5000 SolPerHeros are minted and accounted for, <strong>a percentage of the overall mint collection will be donated to real charities</strong> that can help solve problems in the real world. But a SolPerhero never stops working. Every time one of the 5000 unique SolPerHeros is traded in the secondary market, <strong>a portion of that transaction will also be donated to charities.</strong> SolPerHeros never sleep! They travel the blockchain fighting for humanity with every transaction.</h5>
+                <IoRocketSharp className="icon" /> <h5 className="subTitle">Once the 5000 SolPerHeros are minted and accounted for, <strong>a percentage of the overall mint collection will be donated to real charities</strong> that can help solve problems in the real world. But a SolPerhero never stops working. Every time one of the 5000 unique SolPerHeros is traded in the secondary market, <strong>a portion of that transaction will also be donated to charities.</strong> They travel the blockchain fighting for humanity with every transaction.</h5>
               </div>
             </div>
           </div>
