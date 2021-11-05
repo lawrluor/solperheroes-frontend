@@ -267,7 +267,7 @@ a:hover {
 }
 
 .block1 p {
-  margin: 2.5rem;
+  margin-bottom: 2.2rem;
 }
 
 .block2 {
@@ -345,6 +345,14 @@ a:hover {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .block3 {
+    padding-top: 3rem;
+  }
+
+  .block4 {
+    padding-top: 3rem;
   }
 }
 
