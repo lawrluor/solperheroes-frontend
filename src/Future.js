@@ -1,12 +1,12 @@
 import './App.css';
 
+import NavBar from './NavBar';
+import Footer from './Footer';
+
 function Future() {
   return (
     <div>
-      <header className="App-header">
-        <h2>SOLPERHEROS</h2> 
-        <h5 className="subTitle">...coming soon</h5>
-      </header>
+      <NavBar />
 
       <main className="App-main">
         <section className="block1">
@@ -25,9 +25,7 @@ function Future() {
         </section>
       </main>
 
-      <footer className="App-footer">
-        ©2021 by SolPerHeros NFT
-      </footer>
+      <Footer />
     </div>
   );
 }

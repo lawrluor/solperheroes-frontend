@@ -1,7 +1,11 @@
+
 import './App.css';
 
 import { BsDiscord, BsTwitter } from 'react-icons/bs';
 import { IoRocketSharp } from 'react-icons/io5';
+
+import NavBar from './NavBar';
+import Footer from './Footer';
 
 // const TEAM_IMG_DEFAULT = "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/yellow_circle.png?raw=true"
 const TEAM_DATA = [
@@ -50,10 +54,8 @@ const Home = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>SOLPERHEROS</h2> 
-        <h5 className="subTitle">...coming soon</h5>
-      </header>
+      
+      <NavBar />
 
       <main className="App-main">
         <section className="block1">
@@ -144,9 +146,7 @@ const Home = () => {
         </section>
       </main>
 
-      <footer className="App-footer">
-        ©2021 by SolPerHeros NFT
-      </footer>
+      <Footer />
     </div>
   );
 }

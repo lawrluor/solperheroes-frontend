@@ -1,8 +1,9 @@
-import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Future from "./Future";
 import PageNotFound from "./PageNotFound";
+
+
 
 const App = () => {
 
