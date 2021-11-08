@@ -7,27 +7,27 @@ import { IoRocketSharp } from 'react-icons/io5';
 const TEAM_DATA = [
   {
     "name": "BKDip2311",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/maroon_circle.png?raw=true", // "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/bkdip2311_profile.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/bkdip2311_profile.png?raw=true",
     "role": "Founder",
-    "blurb": "Hello"
+    "blurb": "Mr Genesis has long history into the cryptoverse. Having held crypto in \"cold storage\" since 2013 Mr G has seen the transformation of this world leading technology. He is also guardian and caretaker of this mischievous bunch. The SolPerHeros. The SolPerheros are freshly born from the Solana blockchain and they need guidance on how to help the community but more importantly behave themselves.  In this new world they find themselves in,  Mr. Genesis will guide these SolPerHeros on this epic journey as they give back to humanity."
   },
   {
     "name": "nicktheengineer",
     "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/yellow_circle.png?raw=true",
     "role": "Founder",
-    "blurb": "Hello"
+    "blurb": "Crytpo investor by day, Solperhero fabricator by night. Looking for a portal to the metaverse while dodging questions from wife on why he must spend so much money on NFTs."
   },
   {
     "name": "the law",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/orange_circle.png?raw=true", // "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/the_law.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/the_law.png?raw=true",
     "role": "Lead Dev",
-    "blurb": "Hello"
+    "blurb": "Developer of apps, smart contracts, and everything in between. Responsible for releasing the SolPerHeros into the main net."
   },
   {
     "name": "tooth",
     "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/green_circle.png?raw=true",
     "role": "Founder",
-    "blurb": "Hello"
+    "blurb": "More to come..."
   }
 ]
 
@@ -40,8 +40,9 @@ function App() {
             <img src={member.image} alt="team member"/>
           </div>
           <h2>{member.name}</h2>
-          <h6 className="subTitle ">{member.role}</h6>
-          {/* <p>{member.blurb}</p> */}
+          <h6 className="subTitle">{member.role}</h6>
+          <br/>
+          <h6 className="subTitle">{member.blurb}</h6>
         </div>
       )
     })
@@ -119,9 +120,26 @@ function App() {
         </section>
 
         <section className="block4">
-          <div className="titleContainer">
-            <h1>ROADMAP</h1>
-            <h5 className="subTitle">...to be announced</h5>
+          <div className="block4content">
+            <div className="titleContainer">
+              <h1>ROADMAP</h1>
+            </div>
+
+            <div className="iconTextContainer">
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Whitelist - To be announced</h5>
+            </div>
+
+            <div className="iconTextContainer">
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Public Minting - To be announced</h5>
+            </div>
+
+            <div className="iconTextContainer">
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Special Air Drop to a % of SolPerhero NFT holders (own more to increase % of getting the air drop)</h5>
+            </div>
+            
+            <div className="iconTextContainer">
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Secondary Market Add-ons</h5>
+            </div>
           </div>
         </section>
       </main>

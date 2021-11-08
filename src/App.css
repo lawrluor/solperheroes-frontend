@@ -226,29 +226,6 @@ a:hover {
   align-items: center;
 }
 
-.teamMember {
-  width: 20rem;
-  background: var(--HIGHLIGHT); /* var(--HIGHLIGHT); */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3vh;
-  border-radius: 10px;
-  padding: 15px 0px;
-  box-shadow: 1.5px 1.5px 5px #555555;
-}
-
-.teamMember h3 {
-  color: white;
-}
-
-.teamMember p {
-  color: white;
-}
-
-.teamMember h2 {
-  color: white;
-}
-
 .block1 { 
   background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solana_pincushion_bg@0.5x.png?raw=true");
   min-height: 87vh; /* with top as 10vh, and first block as 87vh, allows second block to show through with 2vh */
@@ -258,7 +235,7 @@ a:hover {
 }
 
 .block1content {
-  width: 60vw;
+  width: 50vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -289,7 +266,7 @@ a:hover {
 .iconTextContainer .icon {
   margin-right: 2px;
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 3vmin;
   color: var(--ACCENT);
   -webkit-text-stroke: 1px var(--FOREGROUND);
 }
@@ -310,9 +287,31 @@ a:hover {
   min-height: 50vh; /* Will be fullsize 100vh when more content is on page */
 }
 
+.block4content {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block4content .subTitle {
+  font-weight: 900;
+  display: inline;
+}
+
 .teamList {
   display: flex;
   flex: 10;
+}
+
+.teamMember {
+  width: 20rem;
+  background: var(--HIGHLIGHT); /* var(--HIGHLIGHT); */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  border-radius: 10px;
+  padding: 15px 15px;
+  box-shadow: 1.5px 1.5px 5px #555555;
 }
 
 .teamMember .imgContainer {
