@@ -8,29 +8,29 @@ import { IoRocketSharp } from 'react-icons/io5';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-// const TEAM_IMG_DEFAULT = "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/yellow_circle.png?raw=true"
+// const TEAM_IMG_DEFAULT = "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/yellow_circle.png?raw=true"
 const TEAM_DATA = [
   {
     "name": "BKDip2311",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/bkdip2311_profile.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/bkdip2311_profile.png?raw=true",
     "role": "Founder",
     "blurb": "Mr Genesis has long history into the cryptoverse. Having held crypto in \"cold storage\" since 2013 Mr G has seen the transformation of this world leading technology. He is also guardian and caretaker of this mischievous bunch. The SolPerHeros. The SolPerheros are freshly born from the Solana blockchain and they need guidance on how to help the community but more importantly behave themselves.  In this new world they find themselves in,  Mr. Genesis will guide these SolPerHeros on this epic journey as they give back to humanity."
   },
   {
     "name": "nicktheengineer",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/yellow_circle.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/nicktheengineer_1_profile.png?raw=true",
     "role": "Founder",
     "blurb": "Crytpo investor by day, Solperhero fabricator by night. Looking for a portal to the metaverse while dodging questions from wife on why he must spend so much money on NFTs."
   },
   {
     "name": "the law",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/the_law.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/the_law.png?raw=true",
     "role": "Lead Dev",
     "blurb": "Creator of apps, smart contracts, and everything in-between. Responsible for freeing and releasing the SolPerHeros into the Solana mainnet."
   },
   {
     "name": "tooth",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/green_circle.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/green_circle.png?raw=true",
     "role": "Founder",
     "blurb": "More to come..."
   }
@@ -62,7 +62,7 @@ const Home = () => {
         <section className="block1">
           <div className="block1content">
             <div className="logoContainer">
-              <img src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/solperheros_banner.png?raw=true"} className="App-logo" alt="logo" />
+              <img src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/solperheros_banner.png?raw=true"} className="App-logo" alt="logo" />
             </div> 
 
             <div className="block1description">
