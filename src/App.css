@@ -320,7 +320,7 @@ a:hover {
 }
 
 .teamMember {
-  width: 20rem;
+  width: 18rem;
   background: var(--HIGHLIGHT); /* var(--HIGHLIGHT); */
   margin-left: auto;
   margin-right: auto;

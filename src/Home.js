@@ -1,4 +1,3 @@
-
 import appStyles from './App.module.css';
 import './App.css';
 
@@ -18,7 +17,7 @@ const TEAM_DATA = [
   },
   {
     "name": "nicktheengineer",
-    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/nicktheengineer_1_profile.png?raw=true",
+    "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/nicktheengineer_profile.png?raw=true",
     "role": "Founder",
     "blurb": "Crytpo investor by day, Solperhero fabricator by night. Looking for a portal to the metaverse while dodging questions from wife on why he must spend so much money on NFTs."
   },
