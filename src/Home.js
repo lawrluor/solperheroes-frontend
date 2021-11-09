@@ -26,7 +26,7 @@ const TEAM_DATA = [
     "name": "the law",
     "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/the_law.png?raw=true",
     "role": "Lead Dev",
-    "blurb": "Developer of apps, smart contracts, and everything in between. Responsible for releasing the SolPerHeros into the main net."
+    "blurb": "Creator of apps, smart contracts, and everything in-between. Responsible for freeing and releasing the SolPerHeros into the Solana mainnet."
   },
   {
     "name": "tooth",
