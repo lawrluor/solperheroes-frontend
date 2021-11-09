@@ -1,4 +1,5 @@
 
+import appStyles from './App.module.css';
 import './App.css';
 
 import { BsDiscord, BsTwitter } from 'react-icons/bs';
@@ -128,19 +129,19 @@ const Home = () => {
             </div>
 
             <div className="iconTextContainer">
-              <IoRocketSharp className="icon" /> <h5 className="subTitle">Whitelist - To Be Announced</h5>
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Whitelist - TBA</h5>
             </div>
 
             <div className="iconTextContainer">
-              <IoRocketSharp className="icon" /> <h5 className="subTitle">Public Minting - To Be Announced</h5>
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Public Minting - TBA</h5>
             </div>
 
             <div className="iconTextContainer">
-              <IoRocketSharp className="icon" /> <h5 className="subTitle">Special SolPerHero Air Drop - To Be Announced</h5> 
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Special SolPerHero Air Drop - TBA</h5> 
             </div>
             
             <div className="iconTextContainer">
-              <IoRocketSharp className="icon" /> <h5 className="subTitle">Secondary Market Add-ons - To Be Announced</h5>
+              <IoRocketSharp className="icon" /> <h5 className="subTitle">Secondary Market Add-ons - TBA</h5>
             </div>
           </div>
         </section>

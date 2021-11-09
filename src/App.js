@@ -3,8 +3,6 @@ import Home from "./Home";
 import Future from "./Future";
 import PageNotFound from "./PageNotFound";
 
-
-
 const App = () => {
 
   return (

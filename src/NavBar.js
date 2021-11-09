@@ -7,7 +7,7 @@ const NavBar = () => {
       {/* <h5 className="subTitle">...coming soon</h5> */}
       <nav
         style={{
-          paddingBottom: "1rem"
+          padding: "0.5rem"
         }}
       >
         <Link to="/" className="navlink">Home</Link> |{" "}

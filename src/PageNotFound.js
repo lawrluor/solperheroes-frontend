@@ -1,5 +1,3 @@
-import './App.css';
-
 const PageNotFound = () => {
   return (
     <main style={{ padding: "1rem" }}>
