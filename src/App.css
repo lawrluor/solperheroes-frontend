@@ -243,7 +243,7 @@ a:hover {
 }
 
 .block1 { 
-  background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/public/img/cosmic_background.png?raw=true");
+  background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/cosmic_background.png?raw=true");
   min-height: 87vh; /* with top as 10vh, and first block as 87vh, allows second block to show through with 2vh */
   display: flex;
   flex-direction: column;
