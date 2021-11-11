@@ -1,3 +1,4 @@
+import React from 'react';
 import './VideoPlayer.css';
 import demoVideo from './assets/vid/SolPerHeros_movie.mp4';
 
@@ -12,9 +13,24 @@ import demoVideo from './assets/vid/SolPerHeros_movie.mp4';
 />     */}
 
 const VideoPlayer = () => {
+  const [isLoading, setLoading] = React.useState(true);
+
   return (
+    isLoading
+    ?
     <div className="video-background">
-      <video src={demoVideo} className="video" autoplay="true" muted loop="true" />
+
+    </div>
+    :
+    <div className="video-background">
+      <video 
+        src={demoVideo}
+        className="video"
+        autoplay="true"
+        loop="true"
+        muted 
+        onLoad={() => setLoading(true)}
+      />
     </div>
   )
 }

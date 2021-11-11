@@ -1,3 +1,4 @@
+import React from 'react';
 import appStyles from './App.module.css';
 import './App.css';
 
@@ -63,7 +64,11 @@ const Home = () => {
         <section className="block1">
           <div className="block1content">
             <div className="logoContainer">
-              <img src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/solperheros_banner.png?raw=true"} className="App-logo" alt="logo" />
+              <img 
+                src={"https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/solperheros_banner.png?raw=true"} 
+                className="App-logo" 
+                alt="logo" 
+              />
             </div> 
 
             <div className="block1description">
@@ -123,7 +128,7 @@ const Home = () => {
             <div className="titleContainer">
               <h1>MEET THE TEAM</h1> 
             </div>
-            
+
             <section className="teamList">
               {generateTeam()}
             </section>
