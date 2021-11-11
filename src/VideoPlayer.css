@@ -1,8 +1,15 @@
 :root {
-  --video-width: 100vw;
-  --video-height: 100vh;
+  --video-width: 60vw;
+  --video-height: 60vh;
 }
 
+@media all and (max-width: 80rem) {
+  :root {
+    --video-width: 80vw;
+    --video-height: 50vw;
+  }
+}
+/* 
 @media (min-aspect-ratio: 16/9) {
   :root {
       --video-height: 56.25vw;
@@ -13,16 +20,19 @@
   :root {
       --video-width: 177.78vh;
   }
-}
+} */
 
 .video-background {
-  position: absolute;
+  position: relative;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+  width: var(--video-width);
+  height: var(--video-height);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
 }
 
-.video-background iframe {
+.video-background video {
   position: absolute;
   top: 50%;
   left: 50%;

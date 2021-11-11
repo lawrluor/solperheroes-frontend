@@ -6,9 +6,7 @@ import { IoRocketSharp } from 'react-icons/io5';
 
 import NavBar from './NavBar';
 import Footer from './Footer';
-import VideoBackground from './VideoBackground';
-
-import demoVideo from './assets/vid/SolPerHeros_movie.mp4';
+import VideoPlayer from './VideoPlayer';
 
 const VIDEO_URL = "https://youtu.be/1jzROE6EhxM";
 // const TEAM_IMG_DEFAULT = "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/yellow_circle.png?raw=true"
@@ -35,7 +33,7 @@ const TEAM_DATA = [
     "name": "tooth",
     "image": "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/green_circle.png?raw=true",
     "role": "Founder",
-    "blurb": "More to come..."
+    "blurb": ""
   }
 ]
 
@@ -115,16 +113,21 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        <video src={demoVideo} className="video" width="600" height="300" autoplay="true" muted />
+        
+        <section className="blockVideo">
+          <VideoPlayer />
+        </section>
 
         <section className="block3">
-          <div className="titleContainer">
-            <h1>MEET THE TEAM</h1> 
+          <div className="block3content">
+            <div className="titleContainer">
+              <h1>MEET THE TEAM</h1> 
+            </div>
+            
+            <section className="teamList">
+              {generateTeam()}
+            </section>
           </div>
-          <section className="teamList">
-            {generateTeam()}
-          </section>
         </section>
 
         <section className="block4">

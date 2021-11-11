@@ -243,7 +243,7 @@ a:hover {
 }
 
 .block1 { 
-  background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/cosmic_background.png?raw=true");
+  background-image: url("https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/Cosmic_background-1@0.5x-min.png?raw=true");
   min-height: 87vh; /* with top as 10vh, and first block as 87vh, allows second block to show through with 2vh */
   display: flex;
   flex-direction: column;
@@ -297,6 +297,12 @@ a:hover {
   min-height: 50vh; /* Will be fullsize 100vh when more content is on page */
 }
 
+.block3content {
+  padding: 2rem 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block4 {
   background: black;
   padding: 2vw;
@@ -314,14 +320,14 @@ a:hover {
   display: inline;
 }
 
+/* .videoBlock {
+  margin: 10rem 0rem;
+  padding: 1rem;
+} */
+
 .teamList {
   display: flex;
   flex: 10;
-}
-
-.video {
-  width: 100vw;
-  height: 100vh;
 }
 
 .teamMember {
