@@ -6,7 +6,11 @@ import { IoRocketSharp } from 'react-icons/io5';
 
 import NavBar from './NavBar';
 import Footer from './Footer';
+import VideoBackground from './VideoBackground';
 
+import demoVideo from './assets/vid/SolPerHeros_movie.mp4';
+
+const VIDEO_URL = "https://youtu.be/1jzROE6EhxM";
 // const TEAM_IMG_DEFAULT = "https://github.com/lawrluor/solperheroes-frontend/blob/main/src/assets/img/yellow_circle.png?raw=true"
 const TEAM_DATA = [
   {
@@ -99,7 +103,7 @@ const Home = () => {
             <div className="titleContainer">
               <h1>WHO ARE THE SOLPERHEROS?</h1>
             </div>
-          
+            
             <div>
               <div className="iconTextContainer">
                 <IoRocketSharp className="icon" /> <h5 className="subTitle">SolPerHeros were always traveling the Solana blockchain. But they needed a way out, and they found it. The blockchain is alive and SolPerHeros in the form of unique NFTs want to use their unique powers to help in our world. </h5>
@@ -111,6 +115,8 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        <video src={demoVideo} className="video" width="600" height="300" autoplay="true" muted />
 
         <section className="block3">
           <div className="titleContainer">
