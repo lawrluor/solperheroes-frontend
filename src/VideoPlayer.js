@@ -13,15 +13,7 @@ import demoVideo from './assets/vid/SolPerHeros_movie.mp4';
 />     */}
 
 const VideoPlayer = () => {
-  const [isLoading, setLoading] = React.useState(true);
-
   return (
-    isLoading
-    ?
-    <div className="video-background">
-
-    </div>
-    :
     <div className="video-background">
       <video 
         src={demoVideo}
@@ -29,7 +21,6 @@ const VideoPlayer = () => {
         autoplay="true"
         loop="true"
         muted 
-        onLoad={() => setLoading(true)}
       />
     </div>
   )
