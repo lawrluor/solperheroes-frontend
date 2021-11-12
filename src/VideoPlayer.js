@@ -20,7 +20,9 @@ const VideoPlayer = () => {
         className="video"
         autoplay="true"
         loop="true"
-        muted 
+        defaultMuted
+        muted
+        playsinline
       />
     </div>
   )
