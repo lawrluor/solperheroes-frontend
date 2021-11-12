@@ -12,17 +12,19 @@ import demoVideo from './assets/vid/SolPerHeros_movie.mp4';
   title="Embedded youtube"
 />     */}
 
+// Note: react attributes have different capitalization than the default HTML5
+// See: https://stackoverflow.com/questions/59404642/react-html-video-tag-wont-autoplay-on-mobile-devices
 const VideoPlayer = () => {
   return (
     <div className="video-background">
       <video 
         src={demoVideo}
         className="video"
-        autoplay="true"
-        loop="true"
+        autoPlay
+        loop={true}
         defaultMuted
         muted
-        playsinline
+        playsInline
       />
     </div>
   )
